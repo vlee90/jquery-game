@@ -1,0 +1,53 @@
+html>
+    <head>
+        <title>
+            The Tortoise and the Hare Betting Game
+        </title>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <div align="center">
+                <h1>
+                    The Tortoise and the Hare Betting Game
+                </h1>
+                <h2>
+                    You have <font color="green">$100</font> to bet on the race. Which contestant will you bet on?
+                </h2>
+            </div>
+        </header><br>
+        <div align="left">
+            <p>
+                <font size="4">Step 1) Check which box you are betting on and click the START button to begin the race!</font>
+            </p>
+            <p>
+                <font size="4">Step 2) After you click the START button, help your contestant win by clicking the "RUN!!!" button over and over until someone wins the race. Good Luck!</font>
+            </p><br>
+        </div>
+        <div>
+            <p>
+                <font size="5">Contestants:</font>
+                <br>
+                <font size="4">(Choose a contestant to bet on)</font>
+            </p>
+            <input id="tortoiseCheck" type="radio" name="selectAnimal">
+            <label for="tortoiseCheck">Tortoise</label>
+            <input id="hareCheck" type="radio" name="selectAnimal">
+            <label for="hareCheck">Hare</label>
+            <button id="start" style="width:100px;height:30px;font-size:20px;">START</button>
+            <br>
+            <p>Watch the contestants' progress in the boxes below. Whoever reaches 100 first wins!</p>
+            <br>
+            <form>
+                <input id="tortoiseOutput" type="text" size="20" disabled>-Tortoise<br>
+                <br>
+                <input id="hareOutput" type="text" size="20" disabled>-Hare<br>
+                <br>
+                <input id="winnerOutput" type="text" size="50" disabled><br>
+                <br>
+                <input id="userMoneyOutput" type="text" size="50" disabled value="You have $100 to start the game.">
+            </form>
+        </div>
+        <script src="game.js"></script>
+    </body>
+</html>
